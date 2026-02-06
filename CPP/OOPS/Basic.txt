@@ -1,0 +1,96 @@
+Access Specifiers and Constructors in C++ :
+-------------------------------------------
+
+Access Specifiers
+
+Access specifiers in C++ are used to control the accessibility of class members (data members and member functions). 
+C++ provides three access specifiers: public, private, and protected.
+
+Public :
+
+Members declared as public are accessible from anywhere in the program.
+They can be accessed inside the class, outside the class, and in derived classes. 
+Public members are mainly used to define the interface of a class.
+
+Private :
+
+Members declared as private are accessible only within the same class. 
+They cannot be accessed from outside the class or by derived classes. 
+In C++, private is the default access specifier. Private members help in data hiding and security.
+
+Protected :
+
+Members declared as protected are accessible within the class and its derived classes, 
+but not accessible outside the class. 
+Protected access is mainly used in inheritance.
+
+Comparison of Access Specifiers :
+---------------------------------
+
+Access Specifier	Inside Class	Outside Class	Derived Class
+----------------    ------------    -------------   -------------
+Public	                Yes	              Yes	       Yes
+Protected	            Yes	               No	       Yes
+Private	                Yes	               No	       No
+
+Constructors in C++ :
+
+A constructor is a special member function of a class that is used to initialize objects. 
+It is called automatically when an object of the class is created. 
+A constructor has the same name as the class and no return type.
+
+Types of Constructors :-
+
+1. Default Constructor
+A constructor that takes no parameters.
+
+2. Parameterized Constructor
+A constructor that takes parameters to initialize data members with specific values.
+
+3. Constructor Overloading
+When a class has more than one constructor with different parameter lists.
+
+Rules of Constructors
+---------------------
+
+Name must be the same as the class name
+No return type (not even void)
+Called automatically when an object is created
+Used for object initialization
+Constructors can be overloaded
+
+Characteristics of Access Specifiers and Constructors in C++ :
+--------------------------------------------------------------
+
+Characteristics of Public Access Specifier :-
+
+Members are accessible from anywhere in the program
+Can be accessed inside and outside the class
+Can be accessed by derived (child) classes
+Used to define the interface of a class
+Helps in object interaction
+
+Characteristics of Private Access Specifier :-
+
+Members are accessible only within the class
+Cannot be accessed outside the class
+Cannot be accessed by derived classes
+Provides data hiding and security
+It is the default access specifier in C++
+
+Characteristics of Protected Access Specifier :-
+
+Members are accessible within the class
+Can be accessed by derived classes
+Cannot be accessed outside the class
+Mainly used in inheritance
+Provides controlled access to class data
+Characteristics of Constructors
+Special member function of a class
+Name is same as the class name
+Has no return type
+Called automatically when an object is created
+Used to initialize objects
+Can be default or parameterized
+Supports constructor overloading
+Improves object initialization and reliability
