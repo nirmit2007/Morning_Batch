@@ -1,0 +1,9 @@
+private : cannot be accessible by the object directly to access them we have to go through member function.
+
+Public : this data are accessible through object directly.
+
+Protected : This data are not accessed through object directly, they are accessed through member function only.
+
+Constructor : Special function which has same name as class name.
+	Default Constructor : It has no argument and does not return any value.
+	Parametrised Constructor : It has argument and used for UDF assignment of variable.
